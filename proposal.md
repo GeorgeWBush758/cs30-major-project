@@ -1,19 +1,19 @@
 # Major project proposal
 
 ## Description
-- Describe what you're going to make
+- mega man type game (have a stick figure or dude with an arm gun that can shoot) make him go through muliple levels shooting (enemys) 
 
 ## Needs to have
-- Money collected from enemies to buy troops
-  - enemy drops random range of coins
-    - will be able to ajust range to make game more or less difficult
-  - player can use the coins to buy troops
-    - could possibly ajust cost to make game more or less difficult
-- multiple troop types with different attacks
-  - sword troop
+- interactive scene (start screen, game screen, game over screen)
+- map design (grid base game?) 
+- movable player (W,A,S,D)
+- player gun (click mouse in direction to shoot) gun should be attached to player model
+- enemys (should despawn if shot with gun) could make them move 
+- random map/level generator (or pre made maps/levels by heath )
+- 
 
 
 ## Nice to have
-- 10+ waves
-- endless mode
-- multiple boss monsters
+- sound effects  
+- player models that are not just squares and circles 
+-  

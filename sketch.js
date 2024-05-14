@@ -10,17 +10,11 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
 
-
-
 }
 
 function draw() {
   background(220);
   
-
-
-
-
 
 
   
@@ -29,6 +23,34 @@ function draw() {
 
   }
 }
+
+
+function displayPlatform() {
+
+  
+}
+
+function movePlatform() {
+  if (key === "a") {
+    //move platform
+  }
+  if (key === "s") {
+    //move platform
+  }
+  if (key === "d") {
+    //move platform
+  }
+  if (key === "a") {
+    //move platform
+  }
+
+
+
+}
+
+
+
+
 
 function ball() {
   circle();

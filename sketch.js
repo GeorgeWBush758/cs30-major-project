@@ -25,10 +25,7 @@ function draw() {
 }
 
 
-function displayPlatform() {
 
-  
-}
 
 function movePlatform() {
   if (key === "a") {
@@ -48,7 +45,10 @@ function movePlatform() {
 
 }
 
+function displayPlatform() {
+  rect(mouseX, mouseY, 50);
 
+}
 
 
 

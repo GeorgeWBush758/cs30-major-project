@@ -18,7 +18,7 @@ function setup() {
 
   x = width / 2;
   y = height / 2;
-  dx = 5;
+  dx = 5; 
   dy = 5;
 
 

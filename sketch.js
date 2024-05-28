@@ -6,7 +6,7 @@ let dy;
 let radius = 50;
 let state = "start";
 
-
+let hit = false;
 
 
 
@@ -27,9 +27,8 @@ function setup() {
 
 function draw() {
   background(220);
-  
 
-
+ 
   
   if (state === "start") {
     showInstructions();
@@ -90,13 +89,9 @@ function bounceOffWall() {
   //bounce if needed
   if (x + radius >= width || x - radius <= 0) {
     dx = -1 * dx;
-    
-    console.log("bounced!");
   }
   if (y + radius >= height || y - radius <= 0) {
     dy = -1 * dy;
-  
-    console.log("bounced!");
   }
 }
 
@@ -118,24 +113,24 @@ function displayPlatform() {
 
 
 function displayBricks() {
-  rect(10, 50, 150, 45);
-  rect(200, 50, 150, 45);
-  rect(400, 50, 150, 45);
-  rect(600, 50, 150, 45);
-  rect(800, 50, 150, 45);
-  rect(1000, 50, 150, 45);
-  rect(1200, 50, 150, 45);
-  rect(1400, 50, 150, 45);
+  rect(10, 10, 150, 45);
+  rect(200, 10, 150, 45);
+  rect(400, 10, 150, 45);
+  rect(600, 10, 150, 45);
+  rect(800, 10, 150, 45);
+  rect(1000, 10, 150, 45);
+  rect(1200, 10, 150, 45);
+  rect(1400, 10, 150, 45);
   //second row 
-  rect(10, 110, 50, 45);
-  rect(100, 110, 150, 45);
-  rect(300, 110, 150, 45);
-  rect(500, 110, 150, 45);
-  rect(700, 110, 150, 45);
-  rect(900, 110, 150, 45); 
-  rect(1100, 110, 150, 45); 
-  rect(1300, 110, 150, 45);
-  rect(1500, 110, 50, 45);
+  rect(10, 70, 50, 45);
+  rect(100, 70, 150, 45);
+  rect(300, 70, 150, 45);
+  rect(500, 70, 150, 45);
+  rect(700, 70, 150, 45);
+  rect(900, 70, 150, 45); 
+  rect(1100, 70, 150, 45); 
+  rect(1300, 70, 150, 45);
+  rect(1500, 70, 50, 45);
 
 
   //third row 

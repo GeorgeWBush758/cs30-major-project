@@ -27,8 +27,11 @@ function setup() {
 
 function draw() {
   background(220);
+  
 
- 
+
+
+
   
   if (state === "start") {
     showInstructions();
@@ -39,7 +42,16 @@ function draw() {
     background("cyan");
 
 
-    displayPlatform();
+    rect(mouseX, 700, 180, 15);
+    circle(x,y,30);
+
+
+    hit = collideRectCircle(mouseX, 700, 180, 15, x, y, );
+   
+   
+   
+   
+    //displayPlatform();
     displayBricks();
     drawCircle();
     moveCircle();
@@ -98,10 +110,10 @@ function bounceOffWall() {
 
  
 
-function displayPlatform() {
-  rect(mouseX, 700, 180, 15);
-  
-}
+//function displayPlatform() {
+//  rect(mouseX, 700, 180, 15);
+// 
+//}
 
 
 
@@ -134,24 +146,24 @@ function displayBricks() {
 
 
   //third row 
-  rect(10, 170, 150, 45);
-  rect(200, 170, 150, 45);
-  rect(400, 170, 150, 45);
-  rect(600, 170, 150, 45);
-  rect(800, 170, 150, 45);
-  rect(1000, 170, 150, 45);
-  rect(1200, 170, 150, 45);
-  rect(1400, 170, 150, 45);
+  rect(10, 130, 150, 45);
+  rect(200, 130, 150, 45);
+  rect(400, 130, 150, 45);
+  rect(600, 130, 150, 45);
+  rect(800, 130, 150, 45);
+  rect(1000, 130, 150, 45);
+  rect(1200, 130, 150, 45);
+  rect(1400, 130, 150, 45);
   // fourth row
-  rect(10, 230, 50, 45);
-  rect(100, 230, 150, 45);
-  rect(300, 230, 150, 45);
-  rect(500, 230, 150, 45);
-  rect(700, 230, 150, 45);
-  rect(900, 230, 150, 45);
-  rect(1100, 230, 150, 45);
-  rect(1300, 230, 150, 45);
-  rect(1500, 230, 50, 45);
+  rect(10, 190, 50, 45);
+  rect(100, 190, 150, 45);
+  rect(300, 190, 150, 45);
+  rect(500, 190, 150, 45);
+  rect(700, 190, 150, 45);
+  rect(900, 190, 150, 45);
+  rect(1100, 190, 150, 45);
+  rect(1300, 190, 150, 45);
+  rect(1500, 190, 50, 45);
 
 
 

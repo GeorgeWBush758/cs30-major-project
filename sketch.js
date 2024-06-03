@@ -41,19 +41,19 @@ function draw() {
   else if (state === "game") {
     background("cyan");
 
-
     rect(mouseX, 700, 180, 15);
-    circle(x,y,30);
+    circle(x, y, 30);
+    hit = collideRectCircle(mouseX, 700, 180, 15, x, y, 50);
 
-
-    hit = collideRectCircle(mouseX, 700, 180, 15, x, y, );
-   
+    if (hit) {
+      dy *= -1;
+    }
    
    
    
     //displayPlatform();
     displayBricks();
-    drawCircle();
+    // drawCircle();
     moveCircle();
     bounceOffWall();
 
@@ -85,11 +85,11 @@ function mousePressed() {
   }
 }
 
-function drawCircle() {
-  //display circle
-  fill("red");
-  circle(x, y, 30);
-}
+//function drawCircle() {
+//  //display circle
+// fill("red");
+// circle(x, y, 30);
+// }
 
 function moveCircle() {
   //move circle

@@ -6,7 +6,41 @@ let dy;
 let radius = 50;
 let state = "start";
 
-let hit = false;
+let hit1 = false;
+let hit2 = false;
+let hit3 = false;
+let hit4 = false;
+let hit5 = false;
+let hit6 = false;
+let hit7 = false;
+let hit8 = false;
+let hit9 = false;
+let hit10 = false;
+let hit11 = false;
+let hit12 = false;
+let hit13 = false;
+let hit14 = false;
+let hit15 = false;
+let hit16 = false;
+let hit17 = false;
+let hit18 = false;
+let hit19 = false;
+let hit20 = false;
+let hit21 = false;
+let hit22 = false;
+let hit23 = false;
+let hit24 = false;
+let hit25 = false;
+let hit26 = false;
+let hit27 = false;
+let hit28 = false;
+let hit29 = false;
+let hit30 = false;
+let hit31 = false;
+let hit32 = false;
+let hit33 = false;
+let hit34 = false;
+let hit35 = false;
 
 
 
@@ -43,17 +77,19 @@ function draw() {
 
     rect(mouseX, 700, 180, 15);
     circle(x, y, 30);
-    hit = collideRectCircle(mouseX, 700, 180, 15, x, y, 50);
+    hit1 = collideRectCircle(mouseX, 700, 180, 15, x, y, 50);
 
-    if (hit) {
+    if (hit1) {
       dy *= -1;
     }
+
    
    
    
-    //displayPlatform();
+    
     displayBricks();
-    // drawCircle();
+    
+
     moveCircle();
     bounceOffWall();
 
@@ -125,16 +161,109 @@ function bounceOffWall() {
 
 
 function displayBricks() {
+  
+
   rect(10, 10, 150, 45);
+  circle(x, y, 30);
+  hit2 = collideRectCircle(10, 10, 150, 45, x, y, 50);
+
+  if (hit2) {
+    dy *= -1;
+  }
+
+  ////
+
   rect(200, 10, 150, 45);
+  circle(x, y, 30);
+  hit3 = collideRectCircle(200, 10, 150, 45, x, y, 50);
+
+  if (hit3) {
+    dy *= -1;
+  }
+
+  ////
+
   rect(400, 10, 150, 45);
+  circle(x, y, 30);
+  hit4 = collideRectCircle(400, 10, 150, 45, x, y, 50);
+
+  if (hit4) {
+    dy *= -1;
+  }
+
+  ////
+
   rect(600, 10, 150, 45);
+  circle(x, y, 30);
+  hit5 = collideRectCircle(600, 10, 150, 45, x, y, 50);
+
+  if (hit5) {
+    dy *= -1;
+  }
+
+  /////
+
   rect(800, 10, 150, 45);
+  circle(x, y, 30);
+  hit6 = collideRectCircle(800, 10, 150, 45, x, y, 50);
+
+  if (hit6) {
+    dy *= -1;
+  }
+
+  //////
+
   rect(1000, 10, 150, 45);
+  circle(x, y, 30);
+  hit7 = collideRectCircle(1000, 10, 150, 45, x, y, 50);
+
+  if (hit7) {
+    dy *= -1;
+  }
+
+  /////
+  
   rect(1200, 10, 150, 45);
+  circle(x, y, 30);
+  hit8 = collideRectCircle(1200, 10, 150, 45, x, y, 50);
+
+  if (hit8) {
+    dy *= -1;
+  }
+
+  /////
+
   rect(1400, 10, 150, 45);
+  circle(x, y, 30);
+  hit9 = collideRectCircle(1400, 10, 150, 45, x, y, 50);
+
+  if (hit9) {
+    dy *= -1;
+  }
+  
+  
   //second row 
+
   rect(10, 70, 50, 45);
+  circle(x, y, 30);
+  hit10 = collideRectCircle(10, 70, 50, 45, x, y, 50);
+
+  if (hit10) {
+    dy *= -1;
+  }
+
+  /////
+
+  rect(100, 70, 150, 45);
+  circle(x, y, 30);
+  hit11 = collideRectCircle(100, 70, 150, 45, x, y, 50);
+
+  if (hit11) {
+    dy *= -1;
+  }
+
+
+ 
   rect(100, 70, 150, 45);
   rect(300, 70, 150, 45);
   rect(500, 70, 150, 45);
@@ -155,6 +284,13 @@ function displayBricks() {
   rect(1200, 130, 150, 45);
   rect(1400, 130, 150, 45);
   // fourth row
+  
+  
+  
+  
+  
+  
+  
   rect(10, 190, 50, 45);
   rect(100, 190, 150, 45);
   rect(300, 190, 150, 45);

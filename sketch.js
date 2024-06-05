@@ -42,7 +42,7 @@ let hit33 = false;
 let hit34 = false;
 let hit35 = false;
 
-
+let array1 = [];
 
 
 function setup() {
@@ -242,7 +242,7 @@ function displayBricks() {
   }
   
   
-  //second row 
+  //second row //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   rect(10, 70, 50, 45);
   circle(x, y, 30);
@@ -251,8 +251,8 @@ function displayBricks() {
   if (hit10) {
     dy *= -1;
   }
-
-  /////
+ 
+  ///// 2
 
   rect(100, 70, 150, 45);
   circle(x, y, 30);
@@ -262,44 +262,249 @@ function displayBricks() {
     dy *= -1;
   }
 
+  /////// 3
 
- 
-  rect(100, 70, 150, 45);
   rect(300, 70, 150, 45);
+  circle(x, y, 30);
+  hit12 = collideRectCircle(300, 70, 150, 45, x, y, 50);
+
+  if (hit12) {
+    dy *= -1;
+  }
+
+  /////// 4
   rect(500, 70, 150, 45);
+  circle(x, y, 30);
+  hit13 = collideRectCircle(500, 70, 150, 45, x, y, 50);
+
+  if (hit13) {
+    dy *= -1;
+  }
+ 
+  /////// 5
+
   rect(700, 70, 150, 45);
-  rect(900, 70, 150, 45); 
-  rect(1100, 70, 150, 45); 
+  circle(x, y, 30);
+  hit14 = collideRectCircle(700, 70, 150, 45, x, y, 50);
+
+  if (hit14) {
+    dy *= -1;
+  }
+
+  ////// 6
+
+  rect(900, 70, 150, 45);
+  circle(x, y, 30);
+  hit15 = collideRectCircle(900, 70, 150, 45, x, y, 50);
+
+  if (hit15) {
+    dy *= -1;
+  }
+
+  ////// 7
+  rect(1100, 70, 150, 45);
+  circle(x, y, 30);
+  hit16 = collideRectCircle(1100, 70, 150, 45, x, y, 50);
+
+  if (hit16) {
+    dy *= -1;
+  }
+
+  ///////// 8
+
   rect(1300, 70, 150, 45);
-  rect(1500, 70, 50, 45);
+  circle(x, y, 30);
+  hit17 = collideRectCircle(1300, 70, 150, 45, x, y, 50);
+
+  if (hit17) {
+    dy *= -1;
+  }
+
+  /////// 9
+
+  rect(1500, 70, 150, 45);
+  circle(x, y, 30);
+  hit18 = collideRectCircle(1500, 70, 150, 45, x, y, 50);
+
+  if (hit18) {
+    dy *= -1;
+  }
 
 
-  //third row 
+
+  //third row  /////////////////////////////////////////////////////////////////////////////////////////////////
+
   rect(10, 130, 150, 45);
+  circle(x, y, 30);
+  hit19 = collideRectCircle(10, 130, 150, 45, x, y, 50);
+
+  if (hit19) {
+    dy *= -1;
+  }
+ 
+  ///// 2
+
   rect(200, 130, 150, 45);
+  circle(x, y, 30);
+  hit20 = collideRectCircle(200, 130, 150, 45, x, y, 50);
+
+  if (hit20) {
+    dy *= -1;
+  }
+
+  /////// 3
+
   rect(400, 130, 150, 45);
+  circle(x, y, 30);
+  hit21 = collideRectCircle(400, 130, 150, 45, x, y, 50);
+
+  if (hit21) {
+    dy *= -1;
+  }
+
+  /////// 4
   rect(600, 130, 150, 45);
+  circle(x, y, 30);
+  hit22 = collideRectCircle(600, 130, 150, 45, x, y, 50);
+
+  if (hit22) {
+    dy *= -1;
+  }
+ 
+  /////// 5
+
   rect(800, 130, 150, 45);
+  circle(x, y, 30);
+  hit23 = collideRectCircle(800, 130, 150, 45, x, y, 50);
+
+  if (hit23) {
+    dy *= -1;
+  }
+
+  ////// 6
+
   rect(1000, 130, 150, 45);
+  circle(x, y, 30);
+  hit24 = collideRectCircle(1000, 130, 150, 45, x, y, 50);
+
+  if (hit24) {
+    dy *= -1;
+  }
+
+  ////// 7
   rect(1200, 130, 150, 45);
+  circle(x, y, 30);
+  hit25 = collideRectCircle(1200, 130, 150, 45, x, y, 50);
+
+  if (hit25) {
+    dy *= -1;
+  }
+
+  ///////// 8
+
   rect(1400, 130, 150, 45);
-  // fourth row
-  
-  
-  
-  
-  
-  
+  circle(x, y, 30);
+  hit26 = collideRectCircle(1400, 130, 150, 45, x, y, 50);
+
+  if (hit26) {
+    dy *= -1;
+  }
+
+
+  // fourth row /////////////////////////////////////////////////////////////////////////////////////////////////
   
   rect(10, 190, 50, 45);
+  circle(x, y, 30);
+  hit27 = collideRectCircle(10, 190, 50, 45, x, y, 50);
+
+  if (hit27) {
+    dy *= -1;
+  }
+ 
+  ///// 2
+
   rect(100, 190, 150, 45);
+  circle(x, y, 30);
+  hit28 = collideRectCircle(100, 190, 150, 45, x, y, 50);
+
+  if (hit28) {
+    dy *= -1;
+  }
+
+  /////// 3
+
   rect(300, 190, 150, 45);
+  circle(x, y, 30);
+  hit29 = collideRectCircle(300, 190, 150, 45, x, y, 50);
+
+  if (hit29) {
+    dy *= -1;
+  }
+
+  /////// 4
   rect(500, 190, 150, 45);
+  circle(x, y, 30);
+  hit30 = collideRectCircle(500, 190, 150, 45, x, y, 50);
+
+  if (hit30) {
+    dy *= -1;
+  }
+ 
+  /////// 5
+
   rect(700, 190, 150, 45);
+  circle(x, y, 30);
+  hit31 = collideRectCircle(700, 190, 150, 45, x, y, 50);
+
+  if (hit31) {
+    dy *= -1;
+  }
+
+  ////// 6
+
   rect(900, 190, 150, 45);
+  circle(x, y, 30);
+  hit32 = collideRectCircle(900, 190, 150, 45, x, y, 50);
+
+  if (hit32) {
+    dy *= -1;
+  }
+
+  ////// 7
   rect(1100, 190, 150, 45);
+  circle(x, y, 30);
+  hit33 = collideRectCircle(1100, 190, 150, 45, x, y, 50);
+  // array1.push(rect(1100, 190, 150, 45));
+
+  if (hit33) {
+    dy *= -1;
+    array1.slice(0,0);
+  }
+
+  ///////// 8
+
   rect(1300, 190, 150, 45);
+  circle(x, y, 30);
+  hit34 = collideRectCircle(1300, 190, 150, 45, x, y, 50);
+
+  if (hit34) {
+    dy *= -1;
+  }
+  
+  ///////// 9
+
   rect(1500, 190, 50, 45);
+  circle(x, y, 30);
+  hit35 = collideRectCircle(1500, 190, 50, 45, x, y, 50);
+  
+  if (hit35) {
+    dy *= -1;
+  }
+  
+  
+  
+  
+  
 
 
 

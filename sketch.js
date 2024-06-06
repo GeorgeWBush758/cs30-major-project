@@ -77,7 +77,7 @@ function draw() {
 
     rect(mouseX, 700, 180, 15);
     circle(x, y, 30);
-    hit1 = collideRectCircle(mouseX, 700, 180, 15, x, y, 50);
+    hit1 = collideRectCircle(mouseX, 700, 180, 15, x, y, 30);
 
     if (hit1) {
       dy *= -1;
@@ -502,13 +502,33 @@ function displayBricks() {
   }
   
   
-  
-  
-  
-
-
-
 }
+
+
+
+
+class Brick {
+  constructor(x, y, rectWidth, rectHeight) {
+    this.x = x;
+    this.y = y;
+    this.width = rectWidth;
+    this.height = rectHeight;  
+  }
+  
+  display() {
+    fill("red");
+    rect(this.x, this.y, this.width, this.height);
+  }
+
+  isColliding(x, y, radius) {
+    return collideRectCircle(this.x, this.y, this.width, this.height, x, y, radius);
+  }
+  
+}
+
+
+
+let brick = new Brick(10, 10, 150, 45);
 
 
 // class Brick 

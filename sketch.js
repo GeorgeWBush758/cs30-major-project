@@ -6,6 +6,9 @@ let dy;
 let radius = 50;
 let state = "start";
 
+
+
+
 let hit1 = false;
 
 
@@ -55,6 +58,15 @@ function draw() {
     }
 
 
+
+    // if (circle(x, y, 30) === height(400)) {
+    //   state === showDeath();
+    //   console.log = "hello";
+    // }
+
+
+
+
     for (let brick of brickArray) {
       brick.display();
 
@@ -81,16 +93,38 @@ function showInstructions() {
   fill("red");
   textSize(50);
   text("Breakout", width/2, height/5);
-  text("made by heath clarke", width/2, height/3.8)
+  text("made by heath clarke", width/2, height/3.8);
   text("***instrunctions***", width/2, height/1.70);
   text("< use the (mouse) to move the platform and hit the bricks up top >", width/2, height/1.50);
-  text("< pretend to have fun >", width/2, height/1.35);
+  text("< pretend to have fun >", width/2, height/1.35); 
+  fill("green");
+  text("< Click The Screen To Start >", width/2, height/1.15);
 
   
   
   textAlign(CENTER);
 
 }
+
+
+function showDeath() {
+  background("black");
+  fill("red");
+  textSize(50);
+  text("you died", width/2,  height/2);
+  text("Dont Bother Retrying If You're This Bad :) ", width/2, height/1.70);
+}
+
+function showWin() {
+  background("black");
+  fill("green");
+  textSize(50);
+  text("you won", width/2,  height/2);
+
+}
+
+
+
 
 function spawnBricks() {
   for (let x = 10; x < width; x += 200) {
@@ -150,7 +184,7 @@ function bounceOffWall() {
     dx = -1 * dx;
   }
   if (y + radius >= height || y - radius <= 0) {
-    dy = -1 * dy;
+    showDeath();
   }
 }
 

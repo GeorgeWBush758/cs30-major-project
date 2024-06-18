@@ -6,7 +6,7 @@ let dy;
 let radius = 50;
 let state = "start";
 
-
+let randomColor = ["red", "blue", "green", "yellow", "purple", "orange", ];
 
 
 let hit1 = false;
@@ -151,8 +151,6 @@ function spawnBricks() {
     let brick = new Brick(x, 250, 150, 45);
     brickArray.push(brick);
   }
-
-
 }
 
 
@@ -203,11 +201,14 @@ class Brick {
     this.x = x;
     this.y = y;
     this.width = rectWidth;
-    this.height = rectHeight;  
+    this.height = rectHeight; 
+    // this.r = random(0,255); 
+    // this.g = random(0,255); 
+    // this.b = random(0,255); 
   }
   
   display() {
-    fill("red");
+    fill(random(0,255), random(0,255), random(0,255));
     rect(this.x, this.y, this.width, this.height);
   }
 
